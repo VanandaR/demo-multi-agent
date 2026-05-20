@@ -77,4 +77,13 @@ const workflow = new StateGraph(AgentState)
 .addEdge("memory", END)
 ;
 
-export const multiAgentApp=workflow.compile();
+export const multiAgentApp = workflow.compile();
+
+export async function runMultiAgent(question: string) {
+    const result = await multiAgentApp.invoke({
+        question,
+        answer: "",
+        route: ""
+    });
+    return result;
+}

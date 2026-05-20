@@ -7,3 +7,38 @@ Content-Type: application/json
 {
   "question": "What is RAG?"
 }
+
+####
+POST http://localhost:3000/agent
+Content-Type: application/json 
+
+{
+  "question": "Create a function to calculate the factorial of a number in Python"
+}
+
+####
+POST http://localhost:3000/agent
+Content-Type: application/json 
+
+{
+  "question": "Calculate the factorial of 5"
+}
+
+####
+POST http://localhost:3000/agent
+Content-Type: application/json 
+
+{
+  "question": "Analyze sales data from the last quarter and provide insights"
+}
+
+####
+POST http://localhost:3000/agent
+Content-Type: application/json 
+
+{
+  "question": "Use tool, what time is it now?"
+}
+
+###
+GET http://localhost:3000/agent/memory

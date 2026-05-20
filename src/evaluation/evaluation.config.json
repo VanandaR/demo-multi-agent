@@ -1,0 +1,14 @@
+[
+    {
+        "question": "Create function to reverse string in python",
+        "expectedRoute": "coding"
+    },
+    {
+        "question": "What is the capital of Indonesia?",
+        "expectedRoute": "chat"
+    },
+    {
+        "question": "Use tool, what time is it now?",
+        "expectedRoute": "tool"
+    }
+]
