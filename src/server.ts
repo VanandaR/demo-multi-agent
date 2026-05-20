@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import { chatRouter } from './routes/chat.routes';
+import { agentRouter } from './routes/agent.routes';
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/chat', chatRouter);
+app.use('/agent', agentRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
